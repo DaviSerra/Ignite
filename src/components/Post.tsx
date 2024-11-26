@@ -70,7 +70,6 @@ export function Post({ author, publishedAt, content }: PostProps) {
                 <div className={styles.author}>
                     <Avatar
                         src={author.avatarUrl}
-
                     />
                     <div className={styles.authorInfo}>
                         <strong>{author.name}</strong>
@@ -91,7 +90,6 @@ export function Post({ author, publishedAt, content }: PostProps) {
                     }
                 })}
             </div>
-
             <form onSubmit={handleCreateNewComment} className={styles.commentForm}>
                 <strong>Deixe seu feedback</strong>
                 <textarea
@@ -111,7 +109,6 @@ export function Post({ author, publishedAt, content }: PostProps) {
                 </footer>
 
             </form>
-
             <div className={styles.CommentList}>
                 {comments.map(comment => {
                     return (

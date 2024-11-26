@@ -21,7 +21,6 @@ export function Sidebar() {
                     Editar seu perfil
                 </a>
             </footer>
-
         </aside>
     )
 }
