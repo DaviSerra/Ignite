@@ -12,7 +12,7 @@ export function Comment({ content, onDeleteComment }: CommentProps) {
   const [likeCount, setLikeCount] = useState(0);
 
   function handlDeleteComment() {
-    onDeleteComment(content);
+    onDeleteComment(content);0
   }
 
   function handleLikeComment() {
@@ -25,8 +25,8 @@ export function Comment({ content, onDeleteComment }: CommentProps) {
     <div className={styles.comment}>
       <Avatar
         hasBorder={false}
-        alt="Foto de perfil"
         src="https://i.pinimg.com/736x/cf/02/3e/cf023e7255232974d1d0ff5dedf3cbd4.jpg"
+        alt="Foto de perfil"
       />
       <div className={styles.commentBox}>
         <div className={styles.commentContent}>
